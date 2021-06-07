@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Help</title>
+	<style type="text/css">
+		.id {
+			padding: 10px;
+			color: black;
+			font-size: 30px;
+			font-style: sans-serif;
+			font-weight: bold;
+
+		}
+
+		.d1,
+		.d2,
+		.d3 {
+			margin-top: 15px;
+			padding: 1px 7px 1px 7px;
+			color: white;
+			font-size: 30px;
+			border-radius: 25px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.d3 {
+			margin-bottom: 150px;
+			
+		}
+
+		.d1:hover {
+			color: black;
+			/* color: #000; */
+			background: #fff;
+			border-radius: 25px;
+			transition: 0.6s;
+		}
+
+		.d2:hover {
+			color: black;
+			/* color: #000; */
+			background: #fff;
+			border-radius: 25px;
+			transition: 0.6s;
+		}
+
+		.d3:hover {
+			color: black;
+			/* color: #000; */
+			background: #fff;
+			border-radius: 25px;
+			transition: 0.6s;
+		}
+
+
+		.help-content a {
+			color: #fff;
+
+			font-weight: 500;
+			text-decoration: none;
+			margin: 0 30px;
+			padding: 0 10px;
+			border-radius: 20px;
+			transition: 0.3s;
+			transition-property: color, background;
+
+		}
+
+		
+
+		.bg-modal {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+
+			position: absolute;
+			top: 0;
+			display: none;
+
+		}
+
+		.box {
+			width: 320px;
+			height: fit-content;
+			margin: 100px auto;
+			background-color: rgba(0, 0, 0, 0.7);
+			background: #fff;
+			border-radius: 7px;
+			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		.box .heading {
+			background: #7800CF;
+			border-radius: 0px 0px 0px 0px;
+			padding-bottom: 10px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			font-family: Rubik;
+		}
+
+		.help-content .btn {
+			display: block;
+			color: #fff;
+			font-size: 12px;
+			cursor: pointer;
+			background: #7800CF;
+			border-radius: 7px 7px 0px 0px;
+			text-align: right;
+			padding-right: 6px;
+
+
+		}
+
+		.faqs {
+			padding: 0px 20px 20px;
+			cursor: pointer;
+		}
+
+		details {
+			background: #f6f6f6;
+			padding: 10px 20px;
+			border-radius: 7px;
+			margin-top: 20px;
+			font-family: Rubik;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+
+		details summary {
+			outline: none;
+		}
+
+		.bg-modal2 {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+
+			position: absolute;
+			top: 0;
+			display: none;
+
+		}
+
+
+
+		.contact-box {
+			width: 500px;
+			background-color: #fff;
+			border-radius: 15px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+		}
+
+		.btn22{
+			height: 30px;
+			display: block;
+			color: #fff;
+			font-size: 15x;
+			/* cursor: pointer; */
+			background: #7800CF;
+			border-radius: 12px 12px 0px 0px;
+			text-align: right;
+			padding-right: 10px;
+			padding-top: 2px;
+		}
+
+		.btn22 i{
+			cursor: pointer;
+		}
+
+		form {
+			margin: 35px;
+			margin-top: 30px;
+		}
+
+		.input-field {
+			width: 400px;
+			height: 40px;
+			margin-top: 20px;
+			padding-right: 10px;
+			padding-left: 10px;
+			border: 1px solid #777;
+			border-radius: 14px;
+			outline: none;
+		}
+
+		.textarea {
+			height: 150px;
+			padding-top: 10px;
+		}
+
+		.popup .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 1;
+			display: none;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.popup .content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			background: #fff;
+			width: 50%;
+			height: 80px;
+			z-index: 2;
+			text-align: center;
+			border-radius: 18px;
+			padding: 20px;
+			padding-top: 12px;
+			box-sizing: border-box;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.popup .close-btn2 {
+			cursor: pointer;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			width: 30px;
+			height: 30px;
+			background: maroon;
+			color: #fff;
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+		.popup.active .overlay {
+			display: block;
+		}
+
+		.popup.active .content {
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%, -50%) scale(1);
+		}
+
+		.btn2 {
+			margin-top: 18px;
+			border-radius: 20px;
+			padding: 10px;
+			border: none;
+			color: white;
+			font-size: 18px;
+			background-color: green;
+			cursor: pointer;
+			font-family: serif;
+
+		}
+
+		.Thank {
+			color: green;
+			font-family: fantasy;
+		}
+
+		.Your {
+			padding-top: 40px;
+			color: white;
+			font-family: sans-serif;
+		}
+
+		.bg-modal3 {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+
+			position: absolute;
+			top: 0;
+			display: none;
+
+		}
+
+		.bd{
+			
+			font-family: serif;
+			color: black;
+			background: white;
+			font-size: 150%;
+			
+			text-align: justify;
+			font-weight: bold;
+			border-radius: 18px;
+			margin: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+			margin-top: 170px;
+	
+			
+       	}
+		   .bd p{
+			   padding: 20px;
+		   }
+		   .btn23{
+			height: 40px;
+			display: block;
+			color: #fff;
+			font-size: 15x;
+			/* cursor: pointer; */
+			background: #7800CF;
+			border-radius: 12px 12px 0px 0px;
+			text-align: right;
+			padding-right: 10px;
+			padding-top: 2px;
+		}
+
+		.btn23 i{
+			cursor: pointer;
+		}
+
+		.limage img{
+			height: 200px;
+			width: 200px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<header>
+		<a href="#" class="logo"><img src="images/logo/l3.jpg" class="logo-image" />YourFarm</a>
+		<div class="menu">
+			<div class="btn">
+				<i class="fas fa-times close-btn"></i>
+			</div>
+			<a href="home.html">Home</a>
+			<a href="logincode.html">Sign In</a>
+			<a href="#about">About</a>
+			<a href="help.html">Help</a>
+			<a href="#about">Contact Us</a>
+		</div>
+		<div class="btn">
+			<i class="fas fa-bars menu-btn"></i>
+		</div>
+	</header>
+
+
+
+	<div class="help-content">
+		<div class="limage"><img src="images/logo/l1.jpg" alt=""></div>
+		<div class="d1" id="cai-btn">
+			Contact And Information
+		</div>
+
+		<div class="bg-modal2">
+			<div class="contact-box">
+				<div class="btn22" id="cai-close"><i class="fas fa-times close-btn"></i></div>
+				<form>
+					<input type="text" class="input-field" placeholder="Your Name">
+					<input type="email" class="input-field" placeholder="Your Email">
+					<textarea type="text" class="input-field textarea" placeholder="Your Query"></textarea>
+					<div class="popup" id="popup-1">
+						<div class="overlay">
+							<div class="content">
+								<div class="close-btn2" onclick="togglePopup()">×</div>
+								<h1 class="Thank">Thank You!</h1><br>
+								<h3 class="Your">Your query has been submitted successfully.</h3>
+							</div>
+						</div>
+					</div>
+					<button onclick="togglePopup()" type="button" class="btn2">Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="d2" id="faq-btn">
+			FAQ's
+		</div>
+		<div class="bg-modal">
+
+			<div class="box">
+				<div class="btn" id="faq-close"><i class="fas fa-times close-btn"></i></div>
+
+				<p class="heading">FAQ's</p>
+				<div class="faqs">
+					<details>
+						<summary>What is YOUR FARM?</summary>
+						<p class="text">Your farm is a website where you can buy Vegetables, Fruits and Dairy products.
+							Your farm often gives discount on their products. Go to our website and be the first one to
+							avail great offers.
+						</p>
+					</details>
+					<details>
+						<summary>Can I return or exchange my order?</summary>
+						<p class="text">No! You cannot return or exchange products once bought.
+						</p>
+					</details>
+					<details>
+						<summary>What do I do if I never recieve my order?</summary>
+						<p class="text">If any such happened to you, you can just contact us and submit your query. We
+							will get shortly in touch with you.</p>
+					</details>
+
+
+				</div>
+			</div>
+
+		</div>
+		<div class="d3" id="ppol">
+			Privacy policy</div>
+		<div class="bg-modal3">
+		<div class="bd">
+			<div class="btn23" id="ppl-close"><i class="fas fa-times close-btn"></i></div>
+			<p>Our privacy policy explains how we treat your data and protect your privacy when you use our services. By using our services, you agree that we can use such data in accordance with our privacy policy.You will ensure that at all times you use the Services, the properties have a clearly labeled and easily accessible privacy policy that provides end-users with clear and comprehensive information about cookies, device-specific information, location information, and other information stored on, accessed on, or collected from the end-users device in connection with the Services, including, as applicable, information about end-users options for cookie management. You will use commercially reasonable efforts to ensure that an end-user gives consent to the storing and accessing of cookies, device-specific information, location, or other information on the end users' device in connection with the Services where such content is required by law.</p>
+			
+		</div>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript">
+		//javascript for navigation bar effect on scroll
+		window.addEventListener("scroll", function () {
+			var header = document.querySelector("header");
+			header.classList.toggle('sticky', window.scrollY > 0);
+		});
+
+		//javascript for responsive navigation sidebar menu
+		var menu = document.querySelector('.menu');
+		var menuBtn = document.querySelector('.menu-btn');
+		var closeBtn = document.querySelector('.close-btn');
+
+		menuBtn.addEventListener("click", () => {
+			menu.classList.add('active');
+		});
+
+		closeBtn.addEventListener("click", () => {
+			menu.classList.remove('active');
+		});
+
+		document.getElementById("faq-btn").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal").style.display = "flex";
+			});
+
+		document.getElementById("faq-close").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal").style.display = "none";
+			});
+
+			document.getElementById("cai-btn").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal2").style.display = "flex";
+			});
+
+			document.getElementById("cai-close").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal2").style.display = "none";
+			});
+			document.getElementById("ppol").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal3").style.display = "flex";
+			});
+
+			document.getElementById("ppl-close").addEventListener("click",
+			function () {
+				document.querySelector(".bg-modal3").style.display = "none";
+			});
+
+			function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
+	</script>
+
+
+	<footer id="about">
+		<div class="footer-content">
+			<h3>YourFarm</h3>
+			<p>Your farm. Com is an online food and grocery store. You will find fresh fruits and vegetables at very reasonable price in our website. We send these grocery items right from the farm due to which our products are fresh  and hygiene and are of best quality and also it reduces the price of buying the products. 
+                Your orders will be delivered right to your doorstep,anywhere in india. You can pay online by using your debit card / credit card or upi apps or by cash on delivery. 
+                We guarantee on time delivery and the best quality! 
+                We hope you find the content relevant and get to know about our website. 
+                Thankyou
+                Happy shopping!!</p>
+			<p>Contact Us:</p>
+			<ul class="social">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+			</ul>
+
+		</div>
+		<div class="footer-bottom">
+			<p>copyright &copy;2021 YourFarm. designed by <span>@blazingbucks!
+				</span></p>
+		</div>
+	</footer>
+</body>
+
+</html>

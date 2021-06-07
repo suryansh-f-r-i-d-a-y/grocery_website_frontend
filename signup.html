@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<title>sign up Form Design</title>
+<link rel="stylesheet" type="text/css" href="signupcss.css">
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+
+  function success(){
+    var user = document.getElementById("user").value;
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("pass").value;
+    var conpass = document.getElementById("conpass").value;
+    var mobile = document.getElementById("mobile").value;
+    if(user == "")
+    {
+      document.getElementById("userr").innerHTML=" **Please enter username** ";
+    }
+    if(email == "")
+    {
+      document.getElementById("emaill").innerHTML=" **Please enter your email** ";
+    }
+    if(pass == "")
+    {
+      document.getElementById("passs").innerHTML=" **Please enter password** ";
+    }
+    if(conpass == "")
+    {
+      document.getElementById("conpasss").innerHTML=" **Please confirm password** ";
+    }
+    if(mobile == "")
+    {
+      document.getElementById("mobilee").innerHTML=" **Please enter mobile number** ";
+    }
+  else{
+    alert("You have been signed up sucessfully!") 
+    window.location.href="home.html"
+  }
+    
+  }
+  
+  </script>
+</head>
+
+
+<body>
+<div class="op">
+<div class="loginbox">
+
+<img src="Capture.PNG" class="avatar">
+
+<h1>Create an account </h1>
+<form>
+  <p>Username</p>
+  <input type="text" name="" id="user" placeholder="username"><span id="userr"></span>
+<p>Email</p>
+<input type="text" name="" id="email" placeholder="Eg:abcd@gmail.com"><span id="emaill"></span>
+<p>Password</p>
+<input type="password" name="" id="pass" placeholder="Enter Password"><span id="passs"></span>
+<p>Confirm Password</p>
+<input type="password" name="" id="conpass" placeholder="Confirm Password"><span id="conpasss"></span>
+<p>Mobile Number</p>
+<input type="text" id="mobile" placeholder="Enter your 10 digit mobile number"><span id="mobilee"></span>
+<fieldset class="radio">
+  <legend>Gender</legend>
+  <form action="" >
+    <input type="radio" name="gender" id="malee" value="male"> Male <br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    
+  </form>
+</fieldset>
+
+<label class="db" for="birthday">D.O.B:</label>
+<input type="date" id="birthday" name="birthday">
+
+<input type="submit" name="" value="Signup" onclick="success();">
+
+
+
+</form>
+</div>
+</div>
+</body>
+
+</html>

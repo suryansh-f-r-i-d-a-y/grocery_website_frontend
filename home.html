@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourFarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="images/logo/l3.jpg" class="logo-image" />YourFarm</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="home.html">Home</a>
+            <a href="logincode.html">Sign In</a>
+            <a href="#about">About</a>
+            <a href="help.html">Help</a>
+            <a href="#about">Contact Us</a>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+
+    <section class="section-main">
+        <h1>Eat Fresh Stay healthy!</h1>
+    </section>
+
+
+    <!-- ------------------ content -------------------- -->
+
+    <div class="container">
+        <a href="#Vegetables">
+            <div class="categories">
+                <img src="images/vegetables/cauliflower.jpg" class="item-image" />
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#Fruits">
+            <div class="categories">
+                <img src="images/fruits/orange.jpg" class="item-image" />
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#dairyProducts">
+            <div class="categories">
+                <img src="images/Dairy Products/dpr.jpg" class="item-image" />
+                <div class="image-title">Dairy Products</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="images/background/gdeals.jpg" class="item-image" />
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- deals begins here -->
+
+    <div class="deals-container" id="deals">
+        <div class="parallax">
+            <div class="title">DEALS</div>
+        </div>
+        <div class="deal">
+            Save 20% on min purchase &#x20B9;2000 <br />
+            <button class="coupon-btn" onclick="dcoupon();" >Add coupon</button>
+        </div>
+        <div class="deal">
+            flat 200&#x20B9; off on min purchase 1000&#x20B9; <br />
+            <button class="coupon-btn" onclick="dcoupon();" >Add coupon</button>
+        </div>
+        <div class="deal">
+            flat 10% off on seasonal fruits and vergetables <br />
+            <button class="coupon-btn" onclick="dcoupon();">Add coupon</button>
+        </div>
+    </div>
+
+    <!-- vegetables begins here -->
+
+
+    <div class="deals-container" id="Vegetables">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/tomato1.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Organic Tomatoes</b><br />
+                <div class="item-select">
+                    price : &#x20B9;15/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                    <option>3kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/carrot1.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Carrot</b><br />
+                <div class="item-select">
+                    price : &#x20B9;30/ 500grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/Capsicum.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Capsicum</b><br />
+                <div class="item-select">
+                    price : &#x20B9;50/ 250grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/Onion.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Onion</b><br />
+                <div class="item-select">
+                    price : &#x20B9;20/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/potato.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Potato</b><br />
+                <div class="item-select">
+                    price : &#x20B9;25/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/cucumber.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Cucumber</b><br />
+                <div class="item-select">
+                    price : &#x20B9;15/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                    <option>3kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/cauliflower.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Cauliflower</b><br />
+                <div class="item-select">
+                    &nbsp&nbsp&nbsp&nbsp price : &#x20B9;20/ 1pc &nbsp &nbsp &nbsp &nbsp &nbsp
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>1pc</option>
+                    <option>2pc</option>
+                    <option>3pc</option>
+                    <option>4 pc</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/vegetables/spinach.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Spinach</b><br />
+                <div class="item-select">
+                    price : &#x20B9;25/ 250 grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- fruits begins here ----- -->
+
+    <div class="deals-container" id="Fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/apple.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Apple</b><br />
+                <div class="item-select">
+                    &nbsp price : &#x20B9;80/ 4 pcs &nbsp &nbsp &nbsp
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/mango.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Mango</b><br />
+                <div class="item-select">
+                    price : &#x20B9;70/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500grams</option>
+                    <option>1kg</option>
+                    <option>2kg</option>
+                    <option>3kg</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/banane.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Banana</b><br />
+                <div class="item-select">
+                    &nbsp &nbsp price : &#x20B9;60/ 12 pcs &nbsp &nbsp
+
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>6 pc</option>
+                    <option>12 pc</option>
+                    <option>18 pc</option>
+                    <option>24 pc</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/grapes.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Grapes</b><br />
+                <div class="item-select">
+                    price : &#x20B9;60/ 500grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                    <option>1500grams</option>
+
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/orange.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Orange</b><br />
+                <div class="item-select">
+                    price : &#x20B9;50/ 500grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                    <option>1500grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/papaya.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Papaya</b><br />
+                <div class="item-select">
+                    price : &#x20B9;65/ 1pc(1.5kg)
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>1pc</option>
+                    <option>2pc</option>
+                    <option>3pc</option>
+                    <option>4pc</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/pomegranate.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Pomegranate</b><br />
+                <div class="item-select">
+                    price : &#x20B9;130/ 1000grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/fruits/watermelon.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Watermelon</b><br />
+                <div class="item-select">
+                    price : &#x20B9;50/1pc(1.5-2kg)
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>1pc</option>
+                    <option>2pc</option>
+                    <option>3pc</option>
+                    <option>4pc</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------  dairy products begins here -------- -->
+
+    <div class="deals-container" id="dairyProducts">
+        <div class="parallax">
+            <div class="title">Dairy Products</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/milk1.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Toned Milk (500ml)</b><br />
+                <div class="item-select">
+                    price : &#x20B9;25/ 500ml &nbsp &nbsp &nbsp
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>500ml</option>
+                    <option>1000ml</option>
+                    <option>1500ml</option>
+                    <option>2000ml</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/curd.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Curd</b><br />
+                <div class="item-select">
+                    price : &#x20B9;20/ 250grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/paneer.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Paneer</b><br />
+                <div class="item-select">
+                    price : &#x20B9;75/ 250grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/butter.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Butter</b><br />
+                <div class="item-select">
+                    price : &#x20B9;50/100gm(1pc)
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>1pc</option>
+                    <option>2pc</option>
+                    <option>3pc</option>
+                    <option>4pc</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/ghee.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Ghee</b><br />
+                <div class="item-select">
+                    price : &#x20B9;125/ 250grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/cheese.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Cheese Slices</b><br />
+                <div class="item-select">
+                    price : &#x20B9;120/ 100grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>100grams</option>
+                    <option>200grams</option>
+                    <option>300grams</option>
+                    <option>400grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/lassi.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Lassi</b><br />
+                <div class="item-select">
+                    price : &#x20B9;50/ 250grams
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="images/Dairy Products/cream.jpg" alt="" class="item-image-size" />
+            </div>
+            <div class="description">
+                <b>Fresh cream</b><br />
+                <div class="item-select">
+                     price : &#x20B9;200/ 1pac (1L))
+                </div>
+                <label>Qty :</label>
+                <select class="item-select">
+                    <option>250ml</option>
+                    <option>500ml</option>
+                    <option>750ml</option>
+                    <option>1000ml</option>
+                </select><br />
+                <button class="buynow-btn" Buy Now>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------footer--------------- -->
+
+
+    <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+
+        function dcoupon(){
+            swal("congratulations!", "Coupon have been applied sucessfully ", "success"); 
+        }
+
+
+    </script>
+
+
+    <footer id="about">
+        <div class="footer-content">
+            <h3>YourFarm: Eat fresh stay healthy!</h3>
+            
+            <p>Your farm. Com is an online food and grocery store. You will find fresh fruits and vegetables at very reasonable price in our website. We send these grocery items right from the farm due to which our products are fresh  and hygiene and are of best quality and also it reduces the price of buying the products. 
+                Your orders will be delivered right to your doorstep,anywhere in india. You can pay online by using your debit card / credit card or upi apps or by cash on delivery. 
+                We guarantee on time delivery and the best quality! 
+                We hope you find the content relevant and get to know about our website. 
+                Thankyou
+                Happy shopping!!</p>
+                <p>Contact Us:</p>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://telegram.org/" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                <li><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 YourFarm. designed by <span>@blazingbucks!
+                </span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

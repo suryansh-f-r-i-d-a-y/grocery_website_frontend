@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+function thankyou()
+{
+    var username = "yourfarm";
+    var password = "welcome";
+
+    var userName = document.getElementById("username").value;
+    var passWord = document.getElementById("password").value;
+
+    if((username==userName)&&(password==passWord)){
+        alert("you have been signed in sucessfully");
+        // swal("Welcome!", "you have been signed in sucessfully ", "success");        
+        window.location.href="home.html";
+        
+            
+
+       
+    }
+    else{
+        swal("Oops...", "Username or Password was wrong","error");
+    }
+    
+
+}
+
+</script>
+</head>
+
+<body>
+<div class="blur">
+<div class="loginbox">
+
+<img src="Capture.PNG" class="avatar">
+
+<h1>Login Here</h1>
+<form>
+<p>Username</p>
+<input type="text" id="username" placeholder="Enter Username">
+<p>Password</p>
+<input type="password" id="password" placeholder="Enter Password">
+<div class="sub" ><a onclick="thankyou();">Login</a></a></div>
+
+<a href="#">Forgot password?</a><br> 
+<a href="signup.html">Don't have an account?</a>
+
+</form>
+</div>
+</div>
+</body>
+
+</html>

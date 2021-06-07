@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  display: block;
+  
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/background/bn7.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.section-main h1{
+  background: rgba(0,0,0,0.5);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+  background: rgba(0,0,0, 0.5);
+  
+}
+
+header.sticky{
+  background: #1483D5;
+  padding: 10px 100px;
+}
+
+header .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+}
+
+header .logo-image{
+  border-radius: 50px;
+  height: 46px;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;}
+
+
+
+
+
+
+  @media (max-width: 1060px){
+    header .btn{
+      display: block;
+    }
+  
+    header .menu{
+      position: fixed;
+      background: #1483D5;
+      flex-direction: column;
+      min-width: 400px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+    }
+  
+    header .menu.active{
+      right: 0;
+    }
+  
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a{
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 630px){
+    .section-main h1{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+
+
+
+
+
+
+
+/* -------------------content------------------- */
+ 
+
+
+
+
+
+
+.parallax{
+  background-image: url(images/background/bg2.jpg);
+  height: max-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.deals-container{
+  margin: 50px 50px 50px 5%;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+}
+
+.container{
+  margin: 50px 50px 50px 5%;
+  width: 90%;
+
+  text-align: center;
+  align-items: center;
+}
+
+.categories,.items{
+  width: max-content;
+  margin:25px;
+  border: 5px solid  #184d47;
+  border-radius: 25px 25px 25px 25px;
+  display: inline-block
+ }
+
+ .categories:hover ,.items:hover{
+  box-shadow: 0 0 10px 3px #184d47;      
+}
+.item-image{
+  height: 200px;
+  width: 200px;
+ 
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  padding: 2px 2px 2px 2px;
+}
+
+
+.image-title{
+  text-align: center;
+  /* padding: 10px; */
+  font-weight: bold;
+  font-size: 20px;
+  color: #184d47;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+
+} 
+
+.title{
+  padding: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: white;
+  background: rgba(0,0,0, 0.5);
+
+}
+
+.deal{
+  padding: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  max-width: 299px;
+  max-height: 161px;
+  background: linear-gradient(
+120deg
+, #16817a 20%, #cee397,#16817a 80%);
+  margin-top: 65px;
+  
+  
+}
+.coupon-btn{
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color:#16817a;
+}
+
+.coupon-btn:hover{
+  box-shadow: 0 0 10px 5px white inset;
+}
+
+.image{
+  display: inline-block;
+}
+
+.item-image-size{
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  /* border: 2px solid #184d47 ; */
+  /* display: inline-block; */
+  border-radius: 17px;
+  margin-top: 7px;
+}
+
+.description{
+  margin: 20px;
+  min-height: 100px;
+} 
+
+.item-select{
+  margin:10px 0 0 0;
+}
+
+.buynow-btn{
+  /* margin: 7px; */
+  padding: 5px;
+  border: 1px solid #184d47;
+  background: #184d47;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color:white;
+}
+
+.buynow-btn:hover{
+  /* margin: 7px; */
+  border: 1px solid #5b8c5a;
+  box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
+
+
+
+
+
+/* ------------------------Footer-------------------- */
+
+
+
+ footer{
+  position:static;
+  bottom:0;
+  right:0;
+  left: 0;
+  background: #111;
+  height: auto;
+  width: auto;
+  font-family:"open Sans";
+  padding: flex;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+
+}
+
+.footer-content p{
+  max-width: auto;
+    margin: 9px;
+    line-height: 24px;
+    font-size: 14px;
+
+}
+
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:13px;
+}
+.social li{
+  margin: 0 10px;
+}
+
+.social a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.social a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.social a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+
+/* help page */
+
+
+.help-content{
+  position: relative;
+    width: 100%;
+    min-height: 100vh;
+  background: url(images/background/bn1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  
+}
+
